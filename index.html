@@ -29,52 +29,56 @@
 
   <main>
     <div class="container-fluid">
-      <section class="row p-5">
+      <section class="row p-5 justify-content-center vh-100 align-items-center">
         <!-- SECTION game -->
-        <div class="col-12 col-md-7">
-          <section class="row p-5">
-            <div class="col-12 col-md-4 card">
+        <!-- ANCHOR Tile -->
+        <div class="col-12 col-md-7 text-center">
+          <section class="row p-5 justify-content-center">
+            <div class="col-12 col-md-4 card appCards">
               <h1>Fruit Salad</h1>
             </div>
           </section>
-          <section id="activePlayer" class="row p-5 justify-conetent-between">
+          <!-- ANCHOR Play area -->
+          <section id="activePlayer" class="row p-5 justify-content-center">
             <!-- <div class="col-12 col-md-5 card p-5">
               <h1>Name</h1>
               <h2>Score:</h2>
             </div> -->
           </section>
-          <section class="row p-5">
-            <div class="col-12 col-md-5 card p-5">
+          <section class="row p-5 justify-content-center">
+            <div class="col-12 col-md-5 card p-5 appCards">
               <section class="row p-2 text-center">
-                <div id= "randomFruit"class="col-12">Name</div>
+                <div id="randomFruit" class="col-12">Name</div>
               </section>
               <section class="row">
-                <form class="form-floating" onsubmit="app.playersController.createPlayer()">
+                <form class="form-floating" onsubmit="app.playersController.checkAnswer()">
                   <!--                                                                 Name needs to be added(reference to Data) -->
-                  <input type="text" class="form-control" id="name" placeholder="name" Name="">
+                  <input type="text" class="form-control" id="name" placeholder="name" Name="answer">
                 </form>
               </section>
             </div>
           </section>
         </div>
         <!-- SECTION scoreboard and form -->
-        <div class="col-12 col-md-4 card">
-          <!-- ANCHOR scoreboard -->
-          <section id="scoreboard" class="row p-5 justify-content-between">
-            <!-- <div class="col-12 col-md-6" onclick="app.playersController.setActivePlayer()">Name</div>
-            <div class="col-12 col-md-6">Score</div> -->
-          </section>
-          <!-- ANCHOR form -->
-          <section class="row">
-            <form class="form-floating" onsubmit="app.playersController.createPlayer()">
-              <!--                                                                 Name needs to be added(reference to Data) -->
-              <input type="text" class="form-control" id="name" placeholder="name" Name="name">
-              <label for="name">Name</label>
-              <button class="btn btn-success">Add Player</button>
-            </form>
-          </section>
-        </div>
+        <div class="col-12 col-md-4">
+          <div class="card appCards p-5">
+            <!-- ANCHOR scoreboard -->
+            <section id="scoreboard" class="row pb-5 justify-content-between">
+              <!-- <div class="col-12 col-md-6" onclick="app.playersController.setActivePlayer()">Name</div>
+                <div class="col-12 col-md-6">Score</div> -->
+            </section>
+            <!-- ANCHOR form -->
+            <section class="row">
+              <form class="form-floating" onsubmit="app.playersController.createPlayer()">
+                <!--                                                                 Name needs to be added(reference to Data) -->
+                <input type="text" class="form-control" id="name" placeholder="name" Name="name">
+                <label for="name">Name</label>
+                <button class="btn btn-success">Add Player</button>
+              </form>
+            </section>
+          </div>
 
+        </div>
     </div>
   </main>
 

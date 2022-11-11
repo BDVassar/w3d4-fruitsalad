@@ -18,7 +18,7 @@ export class Player {
 
   get ActivePlayerTemplate() {
     return `
-    <div class="col-12 col-md-5 card p-5">
+    <div class="col-12 col-md-5 card p-5 appCards">
               <h1>${this.name}</h1>
               <h2>Score:${this.score}</h2>
             </div>

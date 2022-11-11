@@ -1,8 +1,12 @@
 /* BASIC STYLES HERE */
 body {
-  background-image: url(https://www.primaverakitchen.com/wp-content/uploads/2017/06/Really-Good-Summer-Fruit-Salad-3-scaled.jpg);
+  background-image: url(https://thumbs.dreamstime.com/z/berry-fruit-falling-juice-8492773.jpg);
   background-repeat: no-repeat;
-  background-position: start;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 
+}
+
+.appCards{
+background-color: rgba(0, 251, 255, 0.736);
 }
