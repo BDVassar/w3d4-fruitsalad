@@ -25,15 +25,60 @@
       </a>
     </nav>
   </header>
+
+
   <main>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+      <section class="row p-5">
+        <!-- SECTION game -->
+        <div class="col-12 col-md-7">
+          <section class="row p-5">
+            <div class="col-12 col-md-4 card">
+              <h1>Fruit Salad</h1>
+            </div>
+          </section>
+          <section id="activePlayer" class="row p-5 justify-conetent-between">
+            <!-- <div class="col-12 col-md-5 card p-5">
+              <h1>Name</h1>
+              <h2>Score:</h2>
+            </div> -->
+          </section>
+          <section class="row p-5">
+            <div class="col-12 col-md-5 card p-5">
+              <section class="row p-2 text-center">
+                <div id= "randomFruit"class="col-12">Name</div>
+              </section>
+              <section class="row">
+                <form class="form-floating" onsubmit="app.playersController.createPlayer()">
+                  <!--                                                                 Name needs to be added(reference to Data) -->
+                  <input type="text" class="form-control" id="name" placeholder="name" Name="">
+                </form>
+              </section>
+            </div>
+          </section>
         </div>
-      </div>
+        <!-- SECTION scoreboard and form -->
+        <div class="col-12 col-md-4 card">
+          <!-- ANCHOR scoreboard -->
+          <section id="scoreboard" class="row p-5 justify-content-between">
+            <!-- <div class="col-12 col-md-6" onclick="app.playersController.setActivePlayer()">Name</div>
+            <div class="col-12 col-md-6">Score</div> -->
+          </section>
+          <!-- ANCHOR form -->
+          <section class="row">
+            <form class="form-floating" onsubmit="app.playersController.createPlayer()">
+              <!--                                                                 Name needs to be added(reference to Data) -->
+              <input type="text" class="form-control" id="name" placeholder="name" Name="name">
+              <label for="name">Name</label>
+              <button class="btn btn-success">Add Player</button>
+            </form>
+          </section>
+        </div>
+
     </div>
   </main>
+
+
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
       <p><small>Made with 💖 by CodeWorks</small></p>

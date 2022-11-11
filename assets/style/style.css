@@ -1,1 +1,8 @@
 /* BASIC STYLES HERE */
+body {
+  background-image: url(https://www.primaverakitchen.com/wp-content/uploads/2017/06/Really-Good-Summer-Fruit-Salad-3-scaled.jpg);
+  background-repeat: no-repeat;
+  background-position: start;
+  background-size: contain;
+
+}
