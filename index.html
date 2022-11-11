@@ -53,7 +53,7 @@
               <section class="row">
                 <form class="form-floating" onsubmit="app.playersController.checkAnswer()">
                   <!--                                                                 Name needs to be added(reference to Data) -->
-                  <input type="text" class="form-control" id="name" placeholder="name" Name="answer">
+                  <input required type="text" class="form-control" id="name" placeholder="name" Name="answer">
                 </form>
               </section>
             </div>
@@ -71,7 +71,7 @@
             <section class="row">
               <form class="form-floating" onsubmit="app.playersController.createPlayer()">
                 <!--                                                                 Name needs to be added(reference to Data) -->
-                <input type="text" class="form-control" id="name" placeholder="name" Name="name">
+                <input required type="text" class="form-control" id="name" placeholder="name" Name="name">
                 <label for="name">Name</label>
                 <button class="btn btn-success">Add Player</button>
               </form>

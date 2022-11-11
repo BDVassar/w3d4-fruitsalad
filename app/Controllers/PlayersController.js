@@ -43,6 +43,8 @@ export class PlayersController {
     const form = window.event.target
     let playerData = getFormData(form)
     playersService.createPlayer(playerData)
+    // @ts-ignore
+    form.reset()
   }
 
 }
